@@ -1,0 +1,371 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+:root {
+    --light-text-blue: #00a5df;
+    --black: #163651;
+    --dull-black: #738697;
+    --white: #ffffff;
+    --dull-grey: #f8f8f8;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: var(--black);
+}
+
+.header nav {
+    padding: 8px 100px 1px;
+    box-shadow: 0px 1px 15px -9px #000;
+}
+
+.header nav .nav-item {
+    text-align: center;
+    padding: 0 16px;
+}
+
+
+
+.header .nav-item .nav_text {
+    font-size: 15px;
+    font-weight: 600;
+    padding-top: 5px;
+}
+
+.header .nav-item .icon img {
+    width: 20px;
+    height: 20px;
+}
+
+/* *********** header ************* */
+.header {
+    background-image: url('../images/backgrounds/header.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+}
+
+.client_button {
+    margin-right: 90px;
+}
+
+.custom_button button {
+    padding: 4px 24px;
+}
+
+.client_button button, .services_btn {
+    background: var(--light-text-blue);
+}
+
+/* nav text bottom line */
+.header nav .nav-item .nav-link {
+    position: relative;
+}
+
+.header nav .nav-item .nav-link.active::before {
+    content: '';
+    position: absolute;
+    background: var(--light-text-blue);
+    top: 66px;
+    left: 0;
+    width: 100%;
+    height: 3px;
+}
+
+/* header content */
+.header_content {
+    padding: 142px 100px 1px;
+}
+
+.header_content .main_heading h1 {
+    color: var(--light-text-blue);
+    font-weight: 800;
+    font-size: 60px;
+    text-transform: uppercase;
+}
+
+.header_content .paragraph p {
+    color: var(--black);
+    width: 330px;
+    font-size: 15px;
+}
+
+.contact_btn {
+    background: var(--black);
+}
+
+
+/* *********** experience section ************* */
+.experience {
+    padding: 214px 0px 30px 0px;
+    margin-left: -39px;
+    color: var(--black);
+}
+
+.experience .experience_main_heading .left_content {
+    border: 5px solid;
+    padding: 70px 40px;
+    position: relative;
+}
+
+.experience .experience_main_heading .left_content .number {
+    position: absolute;
+    top: 0;
+    left: 33px;
+    color: var(--light-text-blue);
+    font-size: 90px;
+    font-weight: 700;
+}
+
+.experience .experience_main_heading .right_content {
+    padding: 0px 0 0 112px;
+    font-size: 32px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.experience .experience_main_heading .right_content .first_text {
+    font-weight: 700;
+    padding-left: 10px;
+}
+
+.experience .about_ias_section {
+    padding: 80px 0;
+}
+
+.experience .about_ias .main_heading {
+    position: relative;
+    font-size: 40px;
+    font-weight: 600;
+    padding-bottom: 25px;
+    text-transform: uppercase;
+}
+
+.experience .about_ias .main_heading::after {
+    content: '';
+    position: absolute;
+    background: var(--dull-black);
+    width: 100px;
+    height: 2px;
+}
+
+.experience .about_ias p {
+    font-size: 15px;
+    font-weight: 300;
+}
+
+.experience .about_ias_section .about_ias_image img {
+    margin-left: 20px;
+}
+
+.experience .about_ias_section .hotline {
+    color: var(--light-text-blue);
+}
+
+.experience .about_ias_section .hotline .phone_icon img {
+    border: 1px solid;
+    border-radius: 50%;
+    padding: 17px;
+    width: 60px;
+    height: 60px;
+}
+
+.experience .about_ias_section .hotline .hotline_content {
+    font-weight: 600;
+}
+
+.experience .about_ias_section .hotline .hotline_content .number {
+    color: #bcbcbd;
+}
+
+/* ***************** about ias full card section ************** */
+.about_ias_full_card {
+    overflow-x: hidden;
+    padding-bottom: 80px;
+}
+
+.about_ias_full_card .about_ias_card {
+    position: relative;
+    background: var(--black);
+    color: var(--white);
+    padding: 80px 116px 80px 50px;
+}
+
+.card_2 {
+    background: var(--light-text-blue) !important;
+}
+
+.card_2 p {
+    color: var(--white) !important;
+}
+
+
+.card_3 {
+    background: #efeee9 !important;
+    color: var(--black) !important;
+}
+
+.card_3 p {
+    color: #888786;
+}
+
+.about_ias_full_card .about_ias_card .number {
+    position: absolute;
+    top: 40px;
+    right: 50px;
+    font-size: 140px;
+    color: #1a4060;
+}
+
+.card_2 .number {
+    color: #26b2e5 !important;
+}
+
+.card_3 .number {
+    color: #fffefe !important;
+}
+
+
+.about_ias_full_card .about_ias_card .card_content {
+    position: relative;
+    font-size: 12px;
+}
+
+.about_ias_full_card .about_ias_card .card_content h2 {
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.about_ias_full_card .about_ias_card .card_content::before {
+    content: '';
+    position: absolute;
+    background: var(--dull-black);
+    width: 100%;
+    height: 1px;
+    top: 170px;
+    left: 0;
+}
+
+.about_ias_full_card .about_ias_card .card_content p {
+    font-size: 10px;
+    color: var(--dull-black);
+}
+
+/* *********** our services ********** */
+.our_services {
+    padding-bottom: 80px;
+}
+
+.common_main_heading {
+    position: relative;
+    color: var(--black);
+}
+
+.common_main_heading::after {
+    content: '';
+    position: absolute;
+    background: var(--dull-black);
+    width: 100px;
+    height: 2px;
+}
+
+.common_main_heading h1 {
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.common_main_heading p {
+    color: var(--dull-black);
+}
+
+/*  our service card section */
+.our_service_card_section {
+    padding-top: 80px;
+}
+
+.our_service_card_section a {
+    text-decoration: none;
+}
+
+.our_service_card_section .service_card {
+    box-shadow: 1px 1px 10px -6px #000;
+    background: #fff;
+    padding: 50px 40px;
+    border-radius: 5px;
+}
+
+.our_service_card_section .service_card .card_text {
+    text-transform: uppercase;
+    color: var(--black);
+    font-weight: 700;
+    font-size: 20px;
+    padding: 15px 0;
+}
+
+.our_service_card_section .service_card p {
+    font-size: 14px;
+    color: var(--dull-black);
+}
+
+/* ******** specialize section ********** */
+.specialize {
+    background: url('../images/backgrounds/specialize.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 80px 0;
+}
+
+.specialize .paragraph {
+    color: var(--dull-black);
+}
+
+/* ********** message section *************** */
+.message {
+    padding: 80px 0;
+}
+
+.dull_para {
+    color: var(--dull-black);
+}
+
+/* write message form */
+.write_message_form input, .write_message_form textarea {
+    width: 100%;
+    outline: none;
+    border: none;
+    background: var(--dull-grey);
+    border-radius: 5px;
+    padding: 10px 15px;
+    margin-bottom: 15px;
+    font-size: 15px;
+}
+
+/* message_content */
+.message_content {
+    padding: 50px 0;
+}
+
+.message_content .message_content_box {
+    position: relative;
+    background-image: url('../images/backgrounds/message_content.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 45px 80px 0;
+    height: 300px;
+}
+
+.message_content .message_content_box h2 {
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 30px;
+}
+
+.message_content .message_content_box img {
+    position: absolute;
+    top: 30px;
+    left: 14px;
+}
+/* *********** bookkeepers section ********** */
+.bookkeepers{
+    background: ;
+}

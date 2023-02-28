@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+:root {
+    --light-text-blue: #00a5df;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.header nav {
+    padding: 8px 85px 1px;
+    box-shadow: 0px 1px 15px -9px #000;
+}
+
+.header nav .nav-item {
+    text-align: center;
+    padding: 0 16px;
+}
+
+.header nav .nav-item a {
+    position: relative;
+}
+
+.nav-item .nav_text {
+    font-size: 15px;
+    font-weight: 600;
+    padding-top: 5px;
+}
+
+.nav-item .icon img {
+    width: 20px;
+    height: 20px;
+}
+
+/* *********** header ************* */
+.header {
+    background-image: url('../images/backgrounds/header.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+}
+
+.client_button {
+    margin-right: 90px;
+}
+
+.client_button button {
+    padding: 4px 24px;
+    background: var(--light-text-blue);
+}
+
+/* nav text bottom line */
+
+.header nav .nav-item a::before {
+    content: '';
+    position: absolute;
+    background: var(--light-text-blue);
+    top: 66px;
+    left: 0;
+    width: 100%;
+    height: 3px;
+}

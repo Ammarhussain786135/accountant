@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+:root {
+    --light: #00a5df;
+    --white: #ffffff;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.header nav {
+    padding: 8px 85px;
+}
+
+.header nav .nav-item {
+    text-align: center;
+    padding: 0 16px;
+}
+
+.nav-item .nav_text {
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.nav-item .icon img {
+    width: 20px;
+    height: 20px;
+}
+
+/* *********** header ************* */
+.header {
+    background-image: url('../images/backgrounds/header.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+}
+
+.client_button {
+    margin-right: 90px;
+}
+
+.client_button button {
+    padding: 4px 24px;
+    background: #00a5df;
+}
+
+/* nav text bottom line */
+.header nav .nav_text {
+    position: relative;
+}
+
+.header nav .nav_text::before {
+    content: '';
+    position: absolute;
+    background: red;
+    top: 35px;
+    left: 0;
+    width: 100%;
+    height: 3px;
+}
